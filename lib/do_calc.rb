@@ -1,1 +1,1 @@
-require "do/calc/rails"
+require "do/maths/rails"
