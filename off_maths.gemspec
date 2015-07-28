@@ -1,14 +1,14 @@
 Dir["./", "*/"].each{ |p| $:.unshift File.absolute_path(p) unless $:.include?(File.absolute_path(p)) }
 
-require "jmaths/rails/version"
+require "off_maths/rails/version"
 
 Gem::Specification.new do |s|
-  s.name        = "jmaths_rails"
+  s.name        = "off_maths_rails"
   s.version     = Do::Maths::Rails::VERSION
   s.authors       = ["Rafael Laurindo"]
   s.email         = ["rafaelplaurindo@gmail.com"]
-  s.homepage      = "https://rubygems.org/gems/jmaths_rails"
-  s.summary       = %q{Summary of JMaths}
+  s.homepage      = "https://rubygems.org/gems/off_maths_rails"
+  s.summary       = %q{Summary of OffMaths}
   s.description   = %q{It's a lib that abstracts some methods to facilitate the use of Javascript and complementary the jQuery.}
   s.license       = "MIT"
 

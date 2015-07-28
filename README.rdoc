@@ -1,3 +1,5 @@
-= JMathsRails
+= CsMathsRails
 
 This project rocks and uses MIT-LICENSE.
+
+Cliente Side Maths

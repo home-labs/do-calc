@@ -1,4 +1,4 @@
-module Jmaths
+module OffMaths
   module Rails
     VERSION = "0.0.1"
   end

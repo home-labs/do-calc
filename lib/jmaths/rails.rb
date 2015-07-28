@@ -1,1 +1,0 @@
-require 'jmaths/rails/engine'
