@@ -9,20 +9,11 @@ Gem::Specification.new do |s|
   s.email         = ["rafaelplaurindo@gmail.com"]
   s.homepage      = "https://rubygems.org/gems/mathrix_rails"
   s.summary       = %q{Summary of OffMaths}
-  s.description   = %q{It's a lib that abstracts some methods to facilitate the use of Javascript and complementary the jQuery.}
+  s.description   = %q{Description of Mathrix.}
   s.license       = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  JMATHS_REQUIREMENTS = {
-    :"jquery-rails" => '>= 3.0.0'
-  }
+  s.add_runtime_dependency 'do-rails', '~> 0.0.10', '>= 0.0.10'
 
-  JMATHS_REQUIREMENTS.each do |p, v|
-    s.add_runtime_dependency p, v
-  end
-
-  # s.add_dependency "rails", "~> 4.2.0"
-
-  # s.add_development_dependency "sqlite3"
 end
