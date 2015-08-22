@@ -12,7 +12,9 @@ Gem::Specification.new do |s|
   s.description   = %q{Description of Mathrix.}
   s.license       = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files         = `git ls-files -z`.split("\x0")
+  s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.require_paths = ["lib"]
 
   s.add_runtime_dependency 'do-rails', '~> 0.0.10', '>= 0.0.10'
 
