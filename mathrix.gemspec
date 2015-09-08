@@ -5,7 +5,7 @@ require "mathrix/rails/version"
 Gem::Specification.new do |s|
   s.name        = "mathrix_rails"
   s.version     = Mathrix::Rails::VERSION
-  s.authors       = ["Rafael Laurindo"]
+  s.authors       = ["rplaurindo"]
   s.email         = ["rafaelplaurindo@gmail.com"]
   s.homepage      = "https://rubygems.org/gems/mathrix_rails"
   s.summary       = %q{Summary of OffMaths}
