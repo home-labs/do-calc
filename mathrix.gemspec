@@ -3,7 +3,7 @@ Dir["./", "*/"].each{ |p| $:.unshift File.absolute_path(p) unless $:.include?(Fi
 require "mathrix/rails/version"
 
 Gem::Specification.new do |s|
-  s.name        = "mathrix_rails"
+  s.name        = "mathrix-rails"
   s.version     = Mathrix::Rails::VERSION
   s.authors       = ["Rafael Laurindo"]
   s.email         = ["rafaelplaurindo@gmail.com"]
@@ -12,10 +12,6 @@ Gem::Specification.new do |s|
   s.description   = %q{Description of Mathrix.}
   s.license       = "MIT"
 
-  s.files         = `git ls-files -z`.split("\x0")
-  s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  s.require_paths = ["lib"]
-
-  s.add_runtime_dependency 'do-rails', '~> 0.0.10', '>= 0.0.10'
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
 end
