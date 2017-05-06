@@ -1,17 +1,19 @@
-Dir["./", "*/"].each{ |p| $:.unshift File.absolute_path(p) unless $:.include?(File.absolute_path(p)) }
+$:.push File.expand_path("../lib", __FILE__)
 
 require "mathrix/rails/version"
 
 Gem::Specification.new do |s|
   s.name        = "mathrix-rails"
   s.version     = Mathrix::Rails::VERSION
-  s.authors       = ["rplaurindo"]
-  s.email         = ["rafaelplaurindo@gmail.com"]
-  s.homepage      = "https://rubygems.org/gems/mathrix-rails"
-  s.summary       = %q{Summary of OffMaths}
-  s.description   = %q{Description of Mathrix.}
-  s.license       = "MIT"
+  s.authors     = ["rplaurindo"]
+  s.email       = ["rafaelplaurindo@gmail.com"]
+  s.homepage    = "https://rubygems.org/gems/mathrix-rails"
+  s.summary     = %q{Summary of OffMaths}
+  s.Description = %q{Description of Mathrix.}
+  s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files       = Dir["{bin,config,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md", "mathrix.gemspec"]
+
+  s.add_dependency 'esphinx-rails', '~> 0.3'
 
 end
