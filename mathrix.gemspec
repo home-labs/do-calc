@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["rafaelplaurindo@gmail.com"]
   s.homepage    = "https://rubygems.org/gems/mathrix-rails"
   s.summary     = %q{Summary of OffMaths}
-  s.Description = %q{Description of Mathrix.}
+  s.description = %q{Complementary mathematical methods.}
   s.license     = "MIT"
 
   s.files       = Dir["{bin,config,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md", "mathrix.gemspec"]
