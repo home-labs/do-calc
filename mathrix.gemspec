@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = ["rplaurindo"]
   s.email       = ["rafaelplaurindo@gmail.com"]
   s.homepage    = "https://rubygems.org/gems/mathrix-rails"
-  s.summary     = %q{Summary of OffMaths}
+  s.summary     = %q{Summary of Mathrix}
   s.description = %q{Complementary mathematical methods.}
   s.license     = "MIT"
 
