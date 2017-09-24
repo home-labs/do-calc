@@ -14,6 +14,6 @@ Gem::Specification.new do |s|
 
   s.files       = Dir["{bin,config,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md", "mathrix.gemspec"]
 
-  s.add_dependency 'esphinx-rails', '~> 0.3'
+  s.add_dependency 'esphinx-rails', '~> 1.0'
 
 end
